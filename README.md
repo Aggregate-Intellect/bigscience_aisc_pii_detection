@@ -2,6 +2,17 @@
 
 This repository contains the code for various hackathon efforts to detect personally identifiable information in large language datasets, and in particular BigScience's datasets.
 
+## Quick Start
+0. Clone this repo and cd into it
+1. Install [conda](https://www.anaconda.com/products/individual) or [miniconda](https://docs.conda.io/en/latest/miniconda.html)
+2. Run `conda create create -f environment.yml` - this may take several minutes to install all dependencies and download models
+3. Run `conda activate pii` to activate the conda environment
+4. Now you can run `python3 test_regex.py -target_lang en` to test the regex for English. Other commands forthcoming!
+
+## Docker
+1. Run `docker build aisc-pii .` to build the docker image
+2. Run `docker run aisc-pii` to run the container. Currently it calls `python3 test_regex.py -target_lang=en` - you will see the output after a minute or two!
+
 ## Language Groups Leads
 - Hindi
 - Farsi
