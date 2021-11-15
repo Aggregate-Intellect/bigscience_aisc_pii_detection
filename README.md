@@ -14,6 +14,7 @@ This repository contains the code for various hackathon efforts to detect person
 2. Run `docker run aisc-pii` to run the container. Currently it calls `python3 test_regex.py -target_lang=en` - you will see the output after a minute or two!
 
 ## Language Groups Leads
+[LEADS - BUT YOUR GITHUB HANDLES HERE]
 - Hindi
 - Farsi
 - Mandarin
@@ -28,6 +29,7 @@ This repository contains the code for various hackathon efforts to detect person
 - French
 
 ## Module 1
+[TBD: Put in the current status of the data tagging, which is partially completed. Reference LightTag and a Big THANKS to them!]
 
 ## Module 2
 Please put your name by the regex you would like to work on here https://docs.google.com/spreadsheets/d/1rX_bH72CgLMwH5wxwakCAq-gbGsK4wFL4cGVqIZpvCQ/edit#gid=1934842843
