@@ -8,6 +8,26 @@ This repository contains the code for various hackathon efforts to detect person
 2. Run `conda create create -f environment.yml` - this may take several minutes to install all dependencies and download models
 3. Run `conda activate pii` to activate the conda environment
 4. Now you can run `python3 test_regex.py -target_lang en` to test the regex for English. Other commands forthcoming!
+5. You should create your own regex in your python code as follows:
+
+```
+from test_regex import apply_rules
+infile = "<your infile such as en.jsonl>"
+outfile = "<your outputfile>"
+rulebase = [...] # you can load the rulebases from pii_processing.regex for example
+target_lang = "<your lang>"
+right, wrong  = apply_rules(infile, outfile, rulebase, target_lang)
+```
+## The regex rulebase 
+
+A rulebase is an ordered list of rule groups and the number of times to apply the rule groups.
+A rule group is on oredered list of rules of the form (new_label, regex, old_label, before text, after text)
+A rule will match if all of regex, old_label, before text and after text matches. 
+ - new_label is the label to tag the matching text
+ - regex is the regex to use
+ - old label is the label that this text was previously tagged as.  None means to ignore the test.  
+ - before text is some text before the matching pattern. None means to ignore the test.
+ - after text is some text after the matching pattern. None means to ignore the test.
 
 ## Docker
 1. Run `docker build aisc-pii .` to build the docker image
