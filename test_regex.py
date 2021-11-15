@@ -1046,7 +1046,6 @@ if __name__ == "__main__":
     ]
 
     initial = target_lang = None
-    print(sys.argv)
     if "-initial" in sys.argv:
       initial = sys.argv[sys.argv.index("-initial")+1]   
     if "-target_lang" in sys.argv:

@@ -7,7 +7,7 @@ This repository contains the code for various hackathon efforts to detect person
 1. Install [conda](https://www.anaconda.com/products/individual) or [miniconda](https://docs.conda.io/en/latest/miniconda.html)
 2. Run `conda create create -f environment.yml` - this may take several minutes to install all dependencies and download models
 3. Run `conda activate pii` to activate the conda environment
-4. Now you can run `python3 test_regex.py -target_lang=en` to test the regex for English. Other commands forthcoming!
+4. Now you can run `python3 test_regex.py -target_lang en` to test the regex for English. Other commands forthcoming!
 
 ## Docker
 1. Run `docker build aisc-pii .` to build the docker image
