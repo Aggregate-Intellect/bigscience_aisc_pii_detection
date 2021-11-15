@@ -14,7 +14,7 @@ This repository contains the code for various hackathon efforts to detect person
 from test_regex import apply_rules
 infile = "<your infile such as en.jsonl>"
 outfile = "<your outputfile>"
-rulebase = [...] # you can load the rulebases from pii_processing.regex for example
+rulebase = [...] # see description below
 target_lang = "<your lang>"
 right, wrong  = apply_rules(infile, outfile, rulebase, target_lang)
 ```
