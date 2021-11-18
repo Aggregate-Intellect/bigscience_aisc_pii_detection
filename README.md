@@ -60,7 +60,6 @@ Please put your name by the regex you would like to work on here https://docs.go
 
 ## PII Library
 This code is meant to be used in conjunction with the data pipeline developed under the bigscience github repository:
-- https://github.com/bigscience-workshop/pii_processing
 - https://github.com/bigscience-workshop/data_tooling
 
 ## Documentation
