@@ -17,7 +17,7 @@ def main():
 	)
 	parser.add_argument(
 		'--export-path',
-		default='./lexicons'
+		default='./language/zh'
 	)
 	args = parser.parse_args()
 	zh_simplified_dict = {}
