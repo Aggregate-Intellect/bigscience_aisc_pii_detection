@@ -18,3 +18,4 @@ dependencies:
     - pip:
       - datasets==1.15.1
       - langid==1.1.6
+      - hanziconv==0.3.2
