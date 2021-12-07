@@ -5,7 +5,7 @@ This repository contains the code for various hackathon efforts to detect person
 ## Quick Start
 0. Clone this repo and cd into it
 1. Install [conda](https://www.anaconda.com/products/individual) or [miniconda](https://docs.conda.io/en/latest/miniconda.html)
-2. Run `conda create create -f environment.yml` - this may take several minutes to install all dependencies and download models
+2. Run `conda env create -f environment.yml` - this may take several minutes to install all dependencies and download models
 3. Run `conda activate pii` to activate the conda environment
 4. Now you can run `python3 test_regex.py -target_lang en` to test the regex for English. Other commands forthcoming!
 5. You should create your own regex in your python code as follows:
