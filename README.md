@@ -37,7 +37,7 @@ A rule will match if all of regex, old_label, before text and after text matches
 [LEADS - BUT YOUR GITHUB HANDLES HERE]
 - Hindi
 - Farsi
-- Mandarin
+- Mandarin: @ianyu93
 - Vietnamese
 - Russian
 - Portugese
