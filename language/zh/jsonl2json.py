@@ -21,9 +21,11 @@ print(
     The final output will not include where tagged substrings are not found in the example text. 
     """)
 
+
 def text_index(string, substring):
     # Return the start and end indices of substring in string
     return string.index(substring), string.index(substring) + len(substring)
+
 
 # Define input file paths, output directory, and output file name
 input_file = input('Input file_path: ')
@@ -41,9 +43,9 @@ data = [json.loads(json_str) for json_str in json_list]
 # Create a list of dictionaries for text.json
 pii_text = [
     {
-        'id': example['id'], 
-        'text': example['text'], 
-        'lang': example['lang'], 
+        'id': example['id'],
+        'text': example['text'],
+        'lang': example['lang'],
         'domain': example['domain']
     } for example in data
 ]
@@ -58,24 +60,24 @@ for example in data:
             start, end = text_index(example['text'], example_text)
             pii_suggestion_list.append(
                 {
-                    "example_id": example['id'], 
-                    "tag": example_tag, 
+                    "example_id": example['id'],
+                    "tag": example_tag,
                     "start": start,
                     "end": end,
                     "text": example_text
                 }
             )
-        except Exception as e: 
+        except Exception as e:
             print(f"ID: {example['id']}")
             print(f"Text: {example['text']}")
             print(f"Example Text: {example_text}")
             print(e)
-            errors+=1            
+            errors += 1
 print(f"{errors} errors out of {total_examples} total examples")
 
 # Output converted files
 with open(f'{output_file_path}_text.json', 'w') as f:
     json.dump(pii_text, f)
-    
+
 with open(f'{output_file_path}_tags.json', 'w') as f:
     json.dump(pii_suggestion_list, f)
