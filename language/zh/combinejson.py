@@ -23,4 +23,5 @@ def combine_jsons():
     outfile.close()
     return True
 
-m = combine_jsons()
+if __name__ == "__main__":
+    combine_jsons()
