@@ -21,8 +21,9 @@ class ConvertTags:
         file2.close()
         return True
 
-# For reference:
-# from converttags import ConvertTags
-# converting = ConvertTags('test_iob.txt', 'test_result.txt')
-# replacewords = {'B-PERSON':'B-PER', 'I-PERSON':'I-PER'}
-# converting.replace_tags(replacewords)
+if __name__ == "__main__":
+    input_fp = input('Input IOB file to convert PERSON to PER: ')
+    output_fp = input('Output file path: ')
+    converting = ConvertTags(input_fp, output_fp)
+    replacewords = {'B-PERSON':'B-PER', 'I-PERSON':'I-PER'}
+    converting.replace_tags(replacewords)
