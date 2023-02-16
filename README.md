@@ -10,7 +10,7 @@ This repository contains the code for various hackathon efforts to detect person
 4. Now you can run `python3 test_regex.py -target_lang en` to test the regex for English. Other commands forthcoming!
 5. You should create your own regex in your python code as follows:
 
-```
+```python
 from test_regex import apply_rules
 infile = "<your infile such as en.jsonl>"
 outfile = "<your outputfile>"
